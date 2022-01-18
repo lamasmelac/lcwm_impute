@@ -1,19 +1,11 @@
-################################################################
-##----FUNCIONES AUXILIARES REQUERIDAS PARA CORRER EL PROGRAMA  #
-################################################################
+#########################################################
+##----AUXILIARY FUNCTIONS REQUIRED TO RUN THE PROGRAM  #
+########################################################
 
 
-######################################################################
-##-- SCRIPT: PROGRAMA IMPUTACION MULTIVARIADA USANDO GAUSSIAN LCWM --#
-######################################################################
-
-
-
-##-- CARGAR FUNCIONES (1:stick) Y (2:sample.zi)
-
-#################################################################################
-## --- 1. Muestreo de probabilidades de mezcla (alpha) desde Stick Breaking     #
-#################################################################################
+##########################################################################
+## --- 1. Sampling Mixing Probabilities (alpha) from Stick Breaking     #
+#########################################################################
 
 
 stick = function(counts,alpha){
@@ -48,7 +40,7 @@ stick = function(counts,alpha){
 }
 
 #################################################################
-## --- 2. Muestreo del cluster desde la distribucion multinomial#
+## --- 2. Sampling the cluster from the multinomial distribution#
 #################################################################
 
 sample.zi = function(n,K,Y,cur.Pi,cur.Mu,cur.S){
@@ -80,7 +72,7 @@ sample.zi = function(n,K,Y,cur.Pi,cur.Mu,cur.S){
   
   
   ###################################################
-  ##--Funcion para generar colores con transparecia #
+  ##--Function to generate colors with transparency #
   ###################################################
   
   

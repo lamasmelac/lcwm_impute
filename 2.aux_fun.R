@@ -69,6 +69,7 @@ sample.zi = function(n,K,Y,cur.Pi,cur.Mu,cur.S){
   Z.out = max.col( (cum.pi - runif(n))>0, "first") # select which category
   # a random number falls into
   return(as.vector(Z.out))
+}
   
   
   ###################################################
@@ -95,5 +96,5 @@ sample.zi = function(n,K,Y,cur.Pi,cur.Mu,cur.S){
   }
   
   rojo_t = t_col("red",50)
-}
+
 

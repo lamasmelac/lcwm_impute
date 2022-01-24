@@ -122,6 +122,9 @@ while ((i.count[iter]<ta.ef.mu || efsi<ta.ef.mu) & iter<n.sim) {
     ## IMPUTATION START #
     #####################
     if(inf.aux){
+      # - If inf.aux = TRUE, the imputation is done using the 
+      #information from the auxiliary variables, otherwise the 
+      #imputation is done through the "mean method"
       x.aux = matrix(data=x[(m+1):n,(r+1):ncol(x)],nrow = n-m,ncol = p-r) #es fijo puede ir en inicio del codigo
       mu.aux = matrix(data=mu[,(r+1):ncol(x)],nrow = k,ncol = p-r)
       sig.aux = array(data=sig[(r+1):ncol(x),(r+1):ncol(x),],dim = c(p-r,p-r,k))

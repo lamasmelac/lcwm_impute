@@ -43,4 +43,14 @@ legend(x=0.7, y=1.05, legend ="imputed", pch=19, col = rojo_t, cex=1.0, bty = "n
 
 dev.off()
 
+########################
+##--    ESTIMATION     #
+########################
 
+##-- MAP iteration in the estimation case
+##-- to calculate the KL divergence
+#########################################
+
+mcmc$MAP$alpha_MAP
+mcmc$MAP$mu_MAP
+mcmc$MAP$sig_MAP
